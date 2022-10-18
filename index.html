@@ -11,6 +11,7 @@
     <header id="top">
       <h1>Prework Study Guide</h1>
       <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
+      <h2>✨ Open the Console to See What's Happening ✨</h2>
     </header>
     <main>
       <section class="card" id="html-section">
@@ -19,8 +20,8 @@
             <li>The `src` attribute defines the location, or source, of the image file.</li>
             <li>The `alt` attribute contains a text string that describes the appearance and functionality of the image.</li>
             <li>The footer tag appears at the bottom of the page and usually contains the author, copyright, contact, sitemap, and navigation.</li>
-            <li>The head element contains information about the webpage.</li>
-            <li>The body element represents the visible content shown to the user.</li>
+            <li>The head element contains information about the webpage. It is also where the CSS file is linked.</li>
+            <li>The body element represents the visible content shown to the user. It is also where the JavaScript file is linked.</li>
             <li>Switch ul to ol to make the list ordered.</li>
             <li>Link element connects html to external file.</li>
             <li>The period in the filepath means current directory.</li>
@@ -51,7 +52,10 @@
       <section class="card" id="javascript-section">
         <h2>JavaScript</h2>
         <ul>
-          <li>Enter your JavaScript notes here</li>
+          <li>Note: The reason you place the script element near the bottom of the HTML file is that the browser reads code in the order it appears in the file.
+            If the JavaScript loads first and it is supposed to affect the HTML that hasn't loaded yet, there could be problems. Placing JavaScript near the bottom of an HTML page is one way to accommodate this dependency. </li>
+          <li>The alert function, alert("text"); makes a pop-up dialogue box appear inside the browser window with the text written.</li>
+          <li>The prompt function, alert("Please enter your [ex: name]."); makes a pop-up dialogue box appear inside the browser window prompting the user to enter the information asked for.</li>
         </ul>
       </section>
     </main>
@@ -59,5 +63,6 @@
     <footer>
       <p>I can code!</p>
     </footer>
+    <script src="./assets/script.js"></script>
   </body>
 </html>
